@@ -15,6 +15,7 @@
 /******************************* Macro Declarations**********************************************************/
 #define NVIC_BASE      (0XE00E100UL)
 #define NVIC           ((NVIC_Type*)NVIC_BASE)
+#define NVIC_PRIORITY_BITS  4UL
 /******************************* Macro Function Declarations*************************************************/
 /******************************* Data Type Declarations *****************************************************/
 typedef struct{
@@ -133,4 +134,7 @@ void NVIC_SetPendingIRQ(IRQn_Type IRQN);
 void NVIC_ClearPendingIRQ(IRQn_Type IRQN);
 uint8_t NVIC_GetActive(IRQn_Type IRQN);
 uint8_t NVIC_GetActive_Test(IRQn_Type IRQN);
+void NVIC_SetPriorityIRQ(IRQn_Type IRQN,uint32_t priority);
+uint32_t NVIC_GetPriority(IRQn_Type IRQN);
+
 #endif /* CORTEX_M4_CORE_NVIC_H_ */

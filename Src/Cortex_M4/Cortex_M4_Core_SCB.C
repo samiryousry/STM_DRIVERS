@@ -16,3 +16,10 @@ void SCB_SetPriorityGrouping(uint32_t priority_group)
 	register_data|=SCB_PRIORITY_SET(priority_group);
 	SCB->AIRCR=register_data;
 }
+uint32_t SCB_GetPriorityGrouping(){
+	uint32_t register_data =SCB->AIRCR;
+	register_data&=((uint32_t)0x07<<8);
+	register_data>>8;
+	return register_data ;
+
+}

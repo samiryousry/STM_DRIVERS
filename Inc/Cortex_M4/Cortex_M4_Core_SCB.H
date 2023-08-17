@@ -44,7 +44,7 @@
 	}SCB_Type;
 	/******************************* Software Interfaces Declarations *******************************************/
 	void SCB_SetPriorityGrouping(uint32_t priority_group);
-
+	uint32_t SCB_GetPriorityGrouping();
 
 
 #endif /* CORTEX_M4_CORE_SCB_H_ */

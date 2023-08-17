@@ -3,3 +3,5 @@
 ../Src/Cortex_M4/Cortex_M4_Core_NVIC.c:24:6:NVIC_SetPendingIRQ	16	static
 ../Src/Cortex_M4/Cortex_M4_Core_NVIC.c:29:6:NVIC_ClearPendingIRQ	16	static
 ../Src/Cortex_M4/Cortex_M4_Core_NVIC.c:34:9:NVIC_GetActive	24	static
+../Src/Cortex_M4/Cortex_M4_Core_NVIC.c:42:6:NVIC_SetPriorityIRQ	16	static
+../Src/Cortex_M4/Cortex_M4_Core_NVIC.c:51:10:NVIC_GetPriority	16	static
